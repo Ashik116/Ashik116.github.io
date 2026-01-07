@@ -4,22 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio Websitet</title>
+  <title>MD Ashikur Rahman | Flutter Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav>
     <div class="container">
-      <a href="https://digitalpylot.io/team/md-ashikur-rahman/" target="_blank" rel-="noopener noreffer">
-        <img src="images/dplogo.jpg" class="logo" alt="" Digital Pylot Profile" />
-         <span style="font-size: 14px; font-weight: bold; color: #ffffff;">Present Job</span>
+      <a href="https://digitalpylot.io/team/md-ashikur-rahman/" target="_blank" rel="noopener noreferrer">
+        <img src="images/dplogo.jpg" class="logo" alt="Digital Pylot Profile" />
+        <span style="font-size: 14px; font-weight: bold; color: #ffffff;">Present Job</span>
       </a>
+
       <ul id="sidemenu">
         <li><a href="#header">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -28,103 +30,77 @@
     </div>
   </nav>
 
+  <!-- Header Section -->
   <div id="header">
     <div class="container">
       <div class="header-text">
-        <p>Software Engineer</p>
+        <p>Flutter Developer</p>
         <h1>
           Hi, I'm <span>MD Ashikur Rahman</span><br />
-          From Bangladesh<br />
+          From Bangladesh
         </h1>
       </div>
     </div>
   </div>
-  <!---------------- About ----------->
+
+  <!-- About Section -->
   <div id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="images/ashik.jpg" />
+          <img src="images/ashik.jpg" alt="MD Ashikur Rahman" />
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p>
-            Hello! I'm MD Ashikur Rahman, a passionate Flutter Developer and Problem Solver with expertise in modern
-            Mobile Application
-            technologies.
-            <br /><br />
-          <p>
-            Software developer with hands-on experience in <strong>Flutter</strong>, mobile application development, and
-            system integrations.
-            I focus on writing maintainable code, building scalable solutions, and continuously improving through
-            learning and practice.
+            Software developer with hands-on experience in <strong>Flutter</strong>, mobile application development, and system integrations.
+            I focus on writing maintainable code, building scalable solutions, and continuously improving through learning and practice.
           </p>
-          <br /><br />
-          With a strong foundation in Computer Science & Engineering from University of Asia Pacific, I've honed my problem-solving
-          abilities through competitive programming on platforms like Codeforces and LeetCode. My experience spans
-          from developing <strong>POS-Tolling management systems for RHD BD</strong> to building logistics platforms, always focusing on clean
-          code, scalability, and user experience.
-          <br /><br />
-          I'm passionate about learning new technologies, optimizing application performance, and delivering solutions
-          that make a real impact. Whether it's crafting elegant frontend interfaces or architecting robust backend
-          systems, I bring dedication and technical excellence to every project.
+          <p>
+            With a strong foundation in Computer Science & Engineering from University of Asia Pacific, I have built apps ranging from
+            logistics and tolling systems to personal projects. I specialize in delivering smooth, user-friendly interfaces and robust mobile solutions.
+          </p>
+          <p>
+            I am passionate about learning new technologies, optimizing app performance, and creating solutions that make a real impact.
           </p>
 
+          <!-- Tabs -->
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">
-              Skills
-            </p>
-            <p class="tab-links" onclick="opentab('experience')">
-              Experience
-            </p>
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
 
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>Full-Stack Development</span><br />Building scalable web applications using Angular 20, Spring
-                Boot 3.x, Express.js, and PostgreSQL/MySQL</li>
-              <li><span>Backend Development</span><br />Developing RESTful APIs with Java Spring Boot 3.x, Node.js,
-                Express.js, and Hapi.js</li>
-              <li><span>Frontend Development</span><br />Creating dynamic, responsive UI with Angular 20 and modern web
-                technologies</li>
-              <li><span>Database Management</span><br />Designing and optimizing databases using PostgreSQL, MySQL, and
-                MongoDB</li>
-              <li><span>Authentication & Security</span><br />Implementing JWT authentication, Spring Security,
-                role-based access control, and secure APIs</li>
-              <li><span>Problem-Solving & DSA</span><br />Solving algorithmic challenges on Codeforces, LeetCode, and
-                CodeChef</li>
-              <li><span>Deployment & DevOps</span><br />Deploying applications on Vercel, cloud platforms, and
-                optimizing performance</li>
+              <li><span>Flutter Development</span><br />Building cross-platform mobile applications with clean architecture and responsive UI</li>
+              <li><span>Dart Programming</span><br />Writing maintainable and efficient Dart code for mobile apps</li>
+              <li><span>State Management</span><br />Using Provider, Riverpod, and GetX for scalable app state management</li>
+              <li><span>API Integration</span><br />Integrating RESTful APIs, Firebase, and backend services</li>
+              <li><span>UI/UX</span><br />Designing intuitive, user-friendly, and responsive interfaces</li>
+              <li><span>Problem Solving & DSA</span><br />Solving algorithmic challenges on Codeforces and LeetCode</li>
+              <li><span>Deployment</span><br />Publishing apps to Google Play Store and managing CI/CD pipelines</li>
             </ul>
           </div>
-
 
           <div class="tab-contents" id="experience">
             <ul>
               <li>
-                <span>September 2025 - Present</span><br />Young Professional at Aspire to Innovate(A2i) (Full-Stack
-                Development)
+                <span>September 2025 - Present</span><br />Flutter Developer at Aspire to Innovate (A2i)
               </li>
               <li>
-                <span>April 2024 - August 2025</span><br />Web Developer at DOER Service PLC (Backend Development)
+                <span>April 2024 - August 2025</span><br />Web & Mobile Developer at DOER Service PLC
               </li>
               <li>
-                <span>2021 - 2024</span><br />Competitive Programming & Problem Solving (Codeforces, LeetCode, CodeChef)
-              </li>
-              <li>
-                <span>2020 - 2024</span><br />Worked on multiple projects involving Express.js, Hapi.js, Angular,
-                PostgreSQL, and MySQL
+                <span>2021 - 2024</span><br />Competitive Programming & Personal Projects
               </li>
             </ul>
           </div>
-
 
           <div class="tab-contents" id="education">
             <ul>
               <li>
-                <span>2020 - 2024</span><br />B.Sc. in Computer Science & Engineering (CSE) from UAP (University of Asia
-                Pacific)
+                <span>2020 - 2024</span><br />B.Sc. in Computer Science & Engineering from UAP (University of Asia Pacific)
               </li>
             </ul>
           </div>
@@ -134,292 +110,70 @@
     </div>
   </div>
 
-  <!---------------- Statistics Section --------------->
-  <div id="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fa-solid fa-code"></i>
-          </div>
-          <div class="stat-number" data-target="4">0</div>
-          <div class="stat-label">Projects Completed</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fa-solid fa-trophy"></i>
-          </div>
-          <div class="stat-number" data-target="600">0</div>
-          <div class="stat-label">Problems Solved</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fa-solid fa-clock"></i>
-          </div>
-          <div class="stat-number" data-target="2">0</div>
-          <div class="stat-label">Years Experience</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!----------services-->
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Full-Stack Development</h2>
-          <p>
-            Expert in building enterprise-grade applications using <strong>Java Spring Boot 3.x</strong>
-            and <strong>Angular</strong>. I create scalable, secure, and high-performance web applications
-            with modern architecture patterns, RESTful APIs, and responsive user interfaces that deliver
-            exceptional user experiences.
-          </p>
-          <a href="#portfolio">View Projects</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-database"></i>
-          <h2>Backend Architecture</h2>
-          <p>
-            Specialized in designing robust backend systems with <strong>Spring Boot</strong>, Node.js,
-            and microservices architecture. Expert in database design (MySQL, PostgreSQL, MongoDB),
-            implementing secure authentication with Spring Security & JWT, and building scalable
-            RESTful APIs that handle high traffic efficiently.
-          </p>
-          <a href="#contact">Get in Touch</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-terminal"></i>
-          <h2>Problem Solving & Optimization</h2>
-          <p>
-            Strong foundation in Data Structures & Algorithms with <strong>500+ problems solved</strong>
-            on competitive programming platforms. I apply algorithmic thinking to optimize application
-            performance, reduce complexity, and solve challenging technical problems with elegant,
-            efficient solutions.
-          </p>
-          <a href="https://codeforces.com/profile/Rana106" target="_blank">View Profile</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-----------------portfolio-------------------------------------------->
+  <!-- Portfolio Section -->
   <div id="portfolio">
     <div class="container">
       <h1 class="sub-title">My Work</h1>
       <div class="work-list">
         <div class="work">
-          <img src="images/work-1.png" />
+          <img src="images/work-1.png" alt="Project Screenshot" />
           <div class="layer">
             <h3>Café Management System</h3>
-            <p>
-              A professional <strong>Café Management System</strong> built with <strong>Angular</strong> and
-              <strong>Express.js</strong>.
-              Features a dynamic menu, real-time order management, and secure authentication to streamline café
-              operations.
-            </p>
-            <a href="https://cafe-online-shop-bd.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <p>A professional cross-platform app built with <strong>Flutter</strong> and Firebase.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="work">
-          <img src="images/work-2.png" />
+          <img src="images/work-2.png" alt="Project Screenshot" />
           <div class="layer">
             <h3>Doctor Appointment System</h3>
-            <p>
-              A comprehensive healthcare management platform built with <strong>Java Spring Boot 3.x</strong>,
-              <strong>Angular</strong>, and <strong>MySQL</strong>. Features include patient registration,
-              doctor scheduling, appointment booking with real-time availability, medical records management,
-              role-based access control with Spring Security, and automated email notifications.
-            </p>
+            <p>Healthcare mobile application built using <strong>Flutter</strong> and integrated with Firebase and REST APIs.</p>
             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="work">
-          <img src="images/work-3.png" />
+          <img src="images/work-3.png" alt="Project Screenshot" />
           <div class="layer">
-            <h3>Table Extraction using Deep Learning</h3>
-            <p>
-              A machine learning model using PyTorch and OpenCV to extract and
-              process tables from scanned documents for data analysis.
-            </p>
+            <h3>Logistics Tracking App</h3>
+            <p>Cross-platform Flutter app for tracking delivery logistics in real-time.</p>
             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
-      <a href="#" class="btn">See more</a>
     </div>
   </div>
 
-  <!---------------- Achievements Section --------------->
-  <div id="achievements">
-    <div class="container">
-      <h1 class="sub-title">Achievements & Certifications</h1>
-      <div class="achievements-grid">
-        <div class="achievement-card">
-          <div class="achievement-icon">
-            <i class="fa-solid fa-graduation-cap"></i>
-          </div>
-          <h3>B.Sc. in Computer Science & Engineering</h3>
-          <p>Dhaka University of Engineering & Technology (DUET)</p>
-          <span class="achievement-year">2020 - 2024</span>
-        </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">
-            <i class="fa-solid fa-award"></i>
-          </div>
-          <h3>Competitive Programming</h3>
-          <p>Solved 500+ algorithmic problems across Codeforces, LeetCode, and CodeChef</p>
-          <span class="achievement-year">2021 - Present</span>
-        </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">
-            <i class="fa-solid fa-briefcase"></i>
-          </div>
-          <h3>Professional Experience</h3>
-          <p>Full-Stack Developer at leading tech companies, delivering enterprise solutions</p>
-          <span class="achievement-year">2024 - Present</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!----------contact------------->
+  <!-- Contact Section -->
   <div id="contact">
     <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-envelope"></i> mjrcse106@gmail.com</p>
-          <p><i class="fa-solid fa-square-phone"></i> +8801705830693</p>
-
-          <div class="social-icons">
-            <a href="https://www.facebook.com/JewelRana194106" class="facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="twitter">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#" class="instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jewel-rana-cse19duet/" class="linkedin">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="youtube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </div>
-
-          <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
-        </div>
-        <div class="contact-right">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input type="email" name="Email" placeholder="Your Email" required />
-            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
-        </div>
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-envelope"></i> mjrcse106@gmail.com</p>
+      <p><i class="fa-solid fa-square-phone"></i> +8801705830693</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/jewel-rana-cse19duet/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/JewelRana194106" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
       </div>
-    </div>
-    <div class="copyright">
-      <p>
-        Copyright &copy; Rana. Made with <i class="fa-solid fa-heart"></i> by
-        Quick Learn
-      </p>
+      <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
     </div>
   </div>
 
+  <!-- Scripts -->
   <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    // Tabs
     function opentab(tab) {
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active-link");
-      }
-      for (i = 0; i < tabcontents.length; i++) {
-        tabcontents[i].classList.remove("active-tab");
-      }
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active-link");
+      for (i = 0; i < tabcontents.length; i++) tabcontents[i].classList.remove("active-tab");
       document.getElementById(tab).classList.add("active-tab");
       event.currentTarget.classList.add("active-link");
     }
-  </script>
 
-  <script>
+    // Sidebar Menu
     var sidemenu = document.getElementById("sidemenu");
-    function openmenu() {
-      sidemenu.style.right = "0";
-    }
-    function closemenu() {
-      sidemenu.style.right = "-250px";
-    }
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-250px"; }
   </script>
 
-  <!-- Animated Counter Script -->
-  <script>
-    // Counter Animation
-    function animateCounter(element, target, duration) {
-      let start = 0;
-      const increment = target / (duration / 16); // 60 FPS
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= target) {
-          element.textContent = target + (target >= 100 ? '+' : '');
-          clearInterval(timer);
-        } else {
-          element.textContent = Math.floor(start);
-        }
-      }, 16);
-    }
-
-    // Intersection Observer for counter animation
-    const observerOptions = {
-      threshold: 0.5
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const counters = entry.target.querySelectorAll('.stat-number');
-          counters.forEach(counter => {
-            const target = parseInt(counter.getAttribute('data-target'));
-            animateCounter(counter, target, 2000);
-          });
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    // Observe stats section
-    const statsSection = document.getElementById('stats');
-    if (statsSection) {
-      observer.observe(statsSection);
-    }
-  </script>
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz4DrulMLSTwQATQvHsSMWvtmxHmhf572ugQUab7uPhsXdfckoAJ-clTAYsmbmqeo4K/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById('msg')
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          msg.innerHTML = "Message sent successfully."
-          setTimeout(function () {
-            msg.innerHTML = ""
-          }, 5000)
-          form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 </body>
-
 </html>
