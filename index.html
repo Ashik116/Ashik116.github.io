@@ -53,15 +53,20 @@
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p>
-            Software developer with hands-on experience in <strong>Flutter</strong>, mobile application development, and system integrations.
-            I focus on writing maintainable code, building scalable solutions, and continuously improving through learning and practice.
+            Software developer with hands-on experience in <strong>Flutter</strong>, mobile application development, and
+            system integrations.
+            I focus on writing maintainable code, building scalable solutions, and continuously improving through
+            learning and practice.
           </p>
           <p>
-            With a strong foundation in Computer Science & Engineering from University of Asia Pacific, I have built apps ranging from
-            logistics and tolling systems to personal projects. I specialize in delivering smooth, user-friendly interfaces and robust mobile solutions.
+            With a strong foundation in Computer Science & Engineering from University of Asia Pacific, I have built
+            apps ranging from
+            logistics and tolling systems to personal projects. I specialize in delivering smooth, user-friendly
+            interfaces and robust mobile solutions.
           </p>
           <p>
-            I am passionate about learning new technologies, optimizing app performance, and creating solutions that make a real impact.
+            I am passionate about learning new technologies, optimizing app performance, and creating solutions that
+            make a real impact.
           </p>
 
           <!-- Tabs -->
@@ -73,9 +78,11 @@
 
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>Flutter Development</span><br />Building cross-platform mobile applications with clean architecture and responsive UI</li>
+              <li><span>Flutter Development</span><br />Building cross-platform mobile applications with clean
+                architecture and responsive UI</li>
               <li><span>Dart Programming</span><br />Writing maintainable and efficient Dart code for mobile apps</li>
-              <li><span>State Management</span><br />Using Provider, Riverpod, and GetX for scalable app state management</li>
+              <li><span>State Management</span><br />Using Provider, Riverpod, and GetX for scalable app state
+                management</li>
               <li><span>API Integration</span><br />Integrating RESTful APIs, Firebase, and backend services</li>
               <li><span>UI/UX</span><br />Designing intuitive, user-friendly, and responsive interfaces</li>
               <li><span>Problem Solving & DSA</span><br />Solving algorithmic challenges on Codeforces and LeetCode</li>
@@ -100,7 +107,8 @@
           <div class="tab-contents" id="education">
             <ul>
               <li>
-                <span>2020 - 2024</span><br />B.Sc. in Computer Science & Engineering from UAP (University of Asia Pacific)
+                <span>2020 - 2024</span><br />B.Sc. in Computer Science & Engineering from UAP (University of Asia
+                Pacific)
               </li>
             </ul>
           </div>
@@ -127,7 +135,8 @@
           <img src="images/work-2.png" alt="Project Screenshot" />
           <div class="layer">
             <h3>Doctor Appointment System</h3>
-            <p>Healthcare mobile application built using <strong>Flutter</strong> and integrated with Firebase and REST APIs.</p>
+            <p>Healthcare mobile application built using <strong>Flutter</strong> and integrated with Firebase and REST
+              APIs.</p>
             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
@@ -147,33 +156,85 @@
   <div id="contact">
     <div class="container">
       <h1 class="sub-title">Contact Me</h1>
-      <p><i class="fa-solid fa-envelope"></i> mjrcse106@gmail.com</p>
-      <p><i class="fa-solid fa-square-phone"></i> +8801705830693</p>
+      <p><i class="fa-solid fa-envelope"></i> ashikrahaman542@@gmail.com</p>
+      <p><i class="fa-solid fa-square-phone"></i> +8801600199010</p>
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/jewel-rana-cse19duet/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://www.facebook.com/JewelRana194106" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="www.linkedin.com/in/ashikra" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Ashik116" class="github" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
       </div>
       <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- Footer / Copyright Section -->
+  <div class="copyright">
+    <p>
+      Copyright &copy; Ashik Rahman. Made with <i class="fa-solid fa-heart"></i> by AR Technology
+    </p>
+  </div>
+
+  <!-- Tabs Script -->
   <script>
-    // Tabs
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
     function opentab(tab) {
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active-link");
-      for (i = 0; i < tabcontents.length; i++) tabcontents[i].classList.remove("active-tab");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+      }
+      for (i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+      }
       document.getElementById(tab).classList.add("active-tab");
       event.currentTarget.classList.add("active-link");
     }
-
-    // Sidebar Menu
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu() { sidemenu.style.right = "0"; }
-    function closemenu() { sidemenu.style.right = "-250px"; }
   </script>
 
+  <!-- Sidebar Menu Script -->
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-250px";
+    }
+  </script>
+
+  <!-- Animated Counter Script -->
+  <script>
+    function animateCounter(element, target, duration) {
+      let start = 0;
+      const increment = target / (duration / 16);
+      const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+          element.textContent = target + (target >= 100 ? '+' : '');
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(start);
+        }
+      }, 16);
+    }
+
+    const observerOptions = { threshold: 0.5 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll('.stat-number');
+          counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            animateCounter(counter, target, 2000);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    const statsSection = document.getElementById('stats');
+    if (statsSection) observer.observe(statsSection);
+  </script>
 </body>
+
 </html>
