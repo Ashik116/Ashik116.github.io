@@ -340,6 +340,9 @@ nav ul li a:hover::after {
 #contact {
     padding: 80px 0;
 }
+#contact .sub-title {
+    margin-bottom: 35px;
+}
 
 .social-icons a {
     width: 48px;
@@ -349,7 +352,7 @@ nav ul li a:hover::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 12px;
     color: var(--text-secondary);
     transition: var(--normal);
 }
