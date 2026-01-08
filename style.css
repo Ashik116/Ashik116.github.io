@@ -132,7 +132,7 @@ h6 {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url('images/102.png');
+    background-image: url('images/102.jpg');
     background-size: cover;
     background-position: 70% center;
     /* Slightly right of center to favor the subject */
@@ -348,7 +348,7 @@ nav ul li a:hover::after {
    =================================== */
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url("images/ranaback.jpg");
+        background-image: url("images/102.jpg");
         background-position: 85% center;
         /* Push the image left to show the subject on the right */
         background-size: cover;
