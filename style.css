@@ -11,8 +11,8 @@
 :root {
     /* Primary Colors with Enhanced Gradients */
     --primary-color: #ff0066;
-    --primary-gradient: linear-gradient(135deg, #00ff1e 0%, #ff6b9d 50%, #ffa8c5 100%);
-    --primary-gradient-alt: linear-gradient(45deg, #00ff33, #9d4edd, #3a86ff);
+    --primary-gradient: linear-gradient(135deg, #ff0066 0%, #ff6b9d 50%, #ffa8c5 100%);
+    --primary-gradient-alt: linear-gradient(45deg, #ff0066, #9d4edd, #3a86ff);
     --primary-glow: rgba(255, 0, 102, 0.5);
 
     /* Vibrant Accent Colors */
